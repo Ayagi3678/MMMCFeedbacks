@@ -1,2 +1,2 @@
 # MMMCFeedbacks
- MagicTweenMimicFeedbacks
+ MagicTween用のMimicFeedbacksという意味
