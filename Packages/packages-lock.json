@@ -1,11 +1,41 @@
 {
   "dependencies": {
+    "com.annulusgames.magic-tween": {
+      "version": "https://github.com/AnnulusGames/MagicTween.git?path=/MagicTween/Assets/MagicTween",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "078cb46f9edd4974c0fb272831acda21c4e28e7f"
+    },
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "cfe509a55602ba5be6df7fa0468b10298b8a053d"
+    },
+    "com.neuecc.unirx": {
+      "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "284d5c50d3f1ddd9fa7df3d382ea904732a9c2ff"
+    },
     "com.unity.burst": {
-      "version": "1.8.7",
+      "version": "1.8.8",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.cinemachine": {
+      "version": "2.9.7",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31"
       },
       "url": "https://packages.unity.com"
     },
@@ -14,6 +44,36 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.collections": {
+      "version": "2.1.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.8.4",
+        "com.unity.modules.unityanalytics": "1.0.0",
+        "com.unity.nuget.mono-cecil": "1.11.4"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.entities": {
+      "version": "1.0.16",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.8.8",
+        "com.unity.serialization": "3.1.1",
+        "com.unity.collections": "2.1.4",
+        "com.unity.mathematics": "1.2.6",
+        "com.unity.modules.assetbundle": "1.0.0",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.test-framework.performance": "3.0.2",
+        "com.unity.nuget.mono-cecil": "1.11.4",
+        "com.unity.scriptablebuildpipeline": "1.20.2",
+        "com.unity.profiling.core": "1.0.2"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
@@ -55,6 +115,20 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.mono-cecil": {
+      "version": "1.11.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.profiling.core": {
+      "version": "1.0.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.render-pipelines.core": {
       "version": "14.0.8",
       "depth": 1,
@@ -77,11 +151,28 @@
         "com.unity.shadergraph": "14.0.8"
       }
     },
+    "com.unity.scriptablebuildpipeline": {
+      "version": "1.21.5",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.searcher": {
       "version": "4.9.2",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.serialization": {
+      "version": "3.1.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.collections": "2.1.4",
+        "com.unity.burst": "1.7.2"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
@@ -100,6 +191,16 @@
       "dependencies": {
         "com.unity.ext.nunit": "1.0.6",
         "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.test-framework.performance": {
+      "version": "3.0.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
