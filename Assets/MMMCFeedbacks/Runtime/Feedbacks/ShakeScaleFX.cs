@@ -21,6 +21,7 @@ namespace MMMCFeedbacks.Core
         [SerializeField,DisplayIf(nameof(mode),(int)EaseMode.Ease)] private Ease ease=Ease.Linear;
         [SerializeField,DisplayIf(nameof(mode),(int)EaseMode.Curve)]
         [NormalizedAnimationCurve(false)] private AnimationCurve curve=AnimationCurve.Linear(0,0,1,1);
+        [SerializeField] private int frequency=10;
         [SerializeField] private Vector3 strength;
         [SerializeField] private float duration=1;
         
@@ -43,6 +44,7 @@ namespace MMMCFeedbacks.Core
             _tween = target.ShakeLocalScale(strength, duration)
                 .SetIgnoreTimeScale(ignoreTimeScale)
                 .SetRelative(isRelative)
+                .SetFrequency(frequency)
                 .OnKill(_onInitialCache)
                 .OnComplete(_onInitialCache);
             if (mode == EaseMode.Ease) 

@@ -23,6 +23,7 @@ namespace MMMCFeedbacks.Core
         [SerializeField,DisplayIf(nameof(mode),0)] private Ease ease=Ease.Linear;
         [SerializeField,DisplayIf(nameof(mode),1)]
         [NormalizedAnimationCurve(false)] private AnimationCurve curve=AnimationCurve.Linear(0,0,1,1);
+        [SerializeField] private int frequency=10;
         [SerializeField] private Vector3 strength=Vector3.one;
         [SerializeField] private float duration=1;
         
@@ -49,11 +50,13 @@ namespace MMMCFeedbacks.Core
                 SimulationSpace.World => target.ShakeEulerAngles(strength, duration)
                     .SetIgnoreTimeScale(ignoreTimeScale)
                     .SetRelative(isRelative)
+                    .SetFrequency(frequency)
                     .OnKill(_onInitialCacheWorld)
                     .OnComplete(_onInitialCacheWorld),
                 SimulationSpace.Local => target.ShakeLocalEulerAngles(strength, duration)
                     .SetIgnoreTimeScale(ignoreTimeScale)
                     .SetRelative(isRelative)
+                    .SetFrequency(frequency)
                     .OnKill(_onInitialCacheLocal)
                     .OnComplete(_onInitialCacheLocal),
                 _ => throw new ArgumentOutOfRangeException()

@@ -1,6 +1,6 @@
 {
     "name": "com.yagi.mmmcfeedback",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "MMMCFeedbacks",
     "description": "MagicTween用のMimicFeedbacksといういみですね",
     "unity": "2022.3",
