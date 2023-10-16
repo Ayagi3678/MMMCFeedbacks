@@ -1,2 +1,3 @@
 # MMMCFeedbacks
- MagicTween用のMimicFeedbacksという意味
+- MagicTween用のMimicFeedbacksという意味
+- MMCFeedbackのReadMeをみてくれ
