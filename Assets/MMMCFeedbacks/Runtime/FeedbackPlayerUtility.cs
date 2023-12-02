@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using MagicTween;
-using MagicTween.Experimental;
 
 namespace MMMCFeedbacks.Core
 {
