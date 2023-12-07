@@ -9,7 +9,7 @@ namespace MMMCFeedbacks.Core
     [Serializable]
     public class SpriteRendererAlphaFX : Feedback
     {
-        public override int Order => 4;
+        public override int Order => 6;
         public override string MenuString => "Renderer/Alpha (SpriteRenderer)";
         public override Color TagColor => FeedbackStyling.GraphicFXColor; 
         public override Tween Tween => _tween;

@@ -10,7 +10,7 @@ namespace MMMCFeedbacks.Core
     [Serializable]
     public class RendererMaterialFX : Feedback
     {
-        public override int Order => 4;
+        public override int Order => 6;
         public override string MenuString => "Renderer/Material (Renderer)";
         public override Color TagColor => FeedbackStyling.RendererFXColor; 
         public override Tween Tween => _tween;
