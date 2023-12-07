@@ -6,6 +6,7 @@ namespace MMMCFeedbacks.Core
     {
         public static Color VolumeFXColor => Color.Lerp(Color.cyan, Color.green, .5f);
         public static Color GraphicFXColor => Color.magenta;
+        public static Color RendererFXColor => Color.Lerp(Color.magenta, Color.red, .5f);
         public static Color UIFXColor => Color.Lerp(Color.yellow, Color.green, .5f);
         public static Color AudioFXColor => Color.yellow;
         public static Color ParticlesFXColor => Color.Lerp(Color.cyan, Color.blue, .7f);
